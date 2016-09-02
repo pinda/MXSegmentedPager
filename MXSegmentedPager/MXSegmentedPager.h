@@ -24,6 +24,7 @@
 #import <HMSegmentedControl/HMSegmentedControl.h>
 #import <MXPagerView/MXPagerView.h>
 #import <MXParallaxHeader/MXParallaxHeader.h>
+#import "MXScrollView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -208,6 +209,8 @@ typedef NS_ENUM(NSInteger, MXSegmentedControlPosition) {
  The pager. The pager will be placed above or below the segmented control depending on the segmentedControlPosition property.
  */
 @property (nonatomic, readonly) MXPagerView *pager;
+
+@property (nonatomic, readonly) MXScrollView *contentView;
 
 /**
  The padding from the top, left, right, and bottom of the segmentedControl
